@@ -43,10 +43,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: '//rockt.us17.list-manage.com/subscribe/post?u=f11728abdca6d9c4e72f748bf&amp;id=3e22517e03', // add your MC list endpoint here; see instructions below
+        endpoint:
+          '//rockt.us17.list-manage.com/subscribe/post?u=f11728abdca6d9c4e72f748bf&amp;id=3e22517e03', // add your MC list endpoint here; see instructions below
       },
     },
-    
+
     {
       resolve: 'gatsby-transformer-remark-antd',
       options: {

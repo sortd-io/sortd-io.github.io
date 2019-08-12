@@ -6,8 +6,7 @@ import { Button } from 'antd';
 import { FormattedMessage } from 'react-intl';
 import * as utils from '../utils';
 import MailChimpForm from './MailChimpForm';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 function Page2({ location }) {
   const isZhCN = utils.isZhCN(location.pathname);
@@ -26,7 +25,7 @@ function Page2({ location }) {
               <FormattedMessage id="app.home.letspro" />
             </p>
             <div key="code1" className="subscribe">
-            <MailChimpForm/>
+              <MailChimpForm />
             </div>
           </QueueAnim>
         </OverPack>
