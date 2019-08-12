@@ -11,7 +11,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "rm -rf .cache && gatsby develop",
-    "gh-pages": "copy CNAME .\\public\\ && gh-pages -d public",
+    "gh-pages": "cp CNAME ./public/ && gh-pages -d public",
     "lint": "npm run lint:js && npm run lint:style",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
@@ -44,6 +44,7 @@
     "docsearch.js": "^2.6.3",
     "gatsby": "^2.2.7",
     "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-sitemap": "^2.1.0",
     "himalaya": "^1.1.0",
     "html5-device-mockups": "^3.2.1",
@@ -62,6 +63,7 @@
     "react-dom": "^16.4.2",
     "react-github-button": "^0.1.11",
     "react-intl": "^2.4.0",
+    "react-mailchimp-subscribe": "^2.1.0",
     "react-media": "^1.9.2"
   },
   "devDependencies": {
