@@ -25,7 +25,7 @@ export default {
     'app.demo.codepen': 'Open in CodePen',
     'app.demo.riddle': 'Open in Riddle',
     'app.demo.codesandbox': 'Open in CodeSandbox',
-    'app.home.slogan': 'Out-of-box UI solution for enterprise applications',
+    'app.home.slogan': 'Collaborative Organisational Change Management Platform',
     'app.home.preview': 'Preview',
     'app.home.start': 'Getting Started',
     'app.home.download': 'Download',

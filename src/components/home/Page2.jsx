@@ -15,7 +15,7 @@ function Page2({ location }) {
           <div className="title-line" />
         </div>
         <h2>
-          Let’s <span>Pro</span>
+          Let’s get <span>Sortd</span>
         </h2>
         <OverPack>
           <QueueAnim key="queue" type="bottom" leaveReverse className="page2-content">

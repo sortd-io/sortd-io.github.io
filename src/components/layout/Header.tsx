@@ -5,9 +5,8 @@ import { Row, Col, Icon, Select, Input, Menu, Button, Modal, Popover } from 'ant
 import * as utils from '../utils';
 
 const { Option } = Select;
-
-const LOGO_URL = 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg';
-
+ 
+import LOGO_URL from '../../images/full-logo.png';
 const key = 'antd-pro@2.0.0-notification-sent';
 
 let docSearch: (config: any) => void;
@@ -22,8 +21,9 @@ function initDocSearch(locale: 'zh-CN' | 'en-US') {
   }
   const lang = locale === 'zh-CN' ? 'cn' : 'en';
   docSearch({
-    apiKey: 'dfba5eddecb719460b9fd232af57748d',
-    indexName: 'pro_ant_design',
+    appID: 'NMSO14VOK8',
+    apiKey: 'a59495ad789e476554458baa323204d4',
+    indexName: 'prod_SORTD',
     inputSelector: '#search-box input',
     algoliaOptions: { facetFilters: [`tags:${lang}`] },
     transformData(
@@ -251,9 +251,8 @@ class Header extends React.Component<HeaderProps, HeaderState> {
         <Row>
           <Col xxl={4} xl={5} lg={8} md={8} sm={24} xs={24}>
             <Link id="logo" to="/">
-              <img src={LOGO_URL} alt="logo" />
               <img
-                src="https://gw.alipayobjects.com/zos/rmsportal/tNoOLUAkyuGLXoZvaibF.svg"
+                src={LOGO_URL}
                 alt="Ant Design Pro"
               />
             </Link>

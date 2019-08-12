@@ -2,11 +2,14 @@ import React from 'react';
 import GitHubButton from 'react-github-button';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { Button } from 'antd';
+import { Button, Carousel } from 'antd';
 import { Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
-import BannerSVGAnim from './BannerSVGAnim';
 import { isZhCN, getLocalizedPathname } from '../utils';
+import Snapshot from '../../images/Snapshot.png';
+import Readiness from '../../images/Readiness.png';
+import Sizing from '../../images/Sizing Wizard.png';
+import 'html5-device-mockups';
 
 function Banner(props) {
   const { isMobile, location } = props;
@@ -27,7 +30,7 @@ function Banner(props) {
         <div key="line" className="title-line-wrapper">
           <div className="title-line" style={{ transform: 'translateX(-64px)' }} />
         </div>
-        <h1 key="h1">ANT DESIGN PRO</h1>
+        <h1 key="h1">SORTD</h1>
         <p key="content">
           <FormattedMessage id="app.home.slogan" />
         </p>
@@ -51,8 +54,29 @@ function Banner(props) {
         </div>
       </QueueAnim>
       {!isMobile && (
-        <TweenOne animation={{ opacity: 1 }} className="banner-image-wrapper">
-          <BannerSVGAnim />
+        <TweenOne animation={{ opacity: 1 }} height="100%" className="banner-image-wrapper">
+          <div className="device-wrapper" style={{ maxWidth: '100%' }}>
+            <div
+              className="device"
+              data-device="MacbookPro"
+              data-orientation="portrait"
+              data-color="black"
+            >
+              <div className="screen">
+                <Carousel className="home-banner-anim" autoplay>
+                  <div padding="12px">
+                    <img width="100%" height="100%" alt="Change Snapshot" src={Snapshot} />
+                  </div>
+                  <div padding="12px">
+                    <img width="100%" height="100%" alt="Readiness Assessment" src={Readiness} />
+                  </div>
+                  <div padding="12px">
+                    <img width="100%" height="100%" alt="Project Sizing" src={Sizing} />
+                  </div>
+                </Carousel>
+              </div>
+            </div>
+          </div>
         </TweenOne>
       )}
     </div>
