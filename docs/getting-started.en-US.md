@@ -1,147 +1,41 @@
 ---
 order: 0
-title: Getting Started
+title: About Sortd
 type: Introduction
 ---
 
 ## Foreword
 
-Ant Design Pro is a production-ready solution for admin interfaces. Built on the design principles developed by [Ant Design](http://ant.design/), this project introduces higher level components; we have developed templates, components, and a corresponding design kit to improve the user and development experience for admin interfaces.
+> “Change is the law of life, and those who look only to the past and present are certain to miss the future” -John F. Kennedy
 
-Your help is welcomed and much appreciated. With your feedback we can make incremental progress towards elegant and well designed components. Please open a issue or submit a pull request!
+Sortd is a collaborative organisational change management platform. Built on best practice change principals it is highly opinionated out of the box, however is also highly flexible ensuring you can make it work for your organisation.
 
-With those objectives in mind, we have built the following templates and a scaffold based on React.js, which should help you prototyping production-ready admin interfaces.
+## Who is Sortd for?
 
-```
-- Dashboard
-  - Analytic
-  - Monitor
-  - Workspace
-- Form
-  - Basic Form
-  - Step Form
-  - Advanced Form
-- List
-  - Standard Table
-  - Standard List
-  - Card List
-  - Search List (Project/Applications/Article)
-- Profile
-  - Simple Profile
-  - Advanced Profile
-- Result
-  - Success
-  - Failed
-- Exception
-  - 403
-  - 404
-  - 500
-- Account
-  - Account Center
-  - Account Settings
-- Graphic Editor
-  - Flow Editor
-  - Mind Editor
-  - Koni Editor
-- User
-  - Login
-  - Register
-  - Register Result
-```
+Sortd is aimed at any organisation going through change. Whether undergoing a full blown business transformation project or small constant operational changes, Sortd offers a variety of tools and templates to assist. 
 
-> All of the above pages can be found in Pro's [Blocks](https://github.com/ant-design/pro-blocks).
+The platform may be of particular interest to people who are responsible for delivering change within their organisation, in particular project managers, business owners, HR business partners, and training leads. The platform offers an easy-to-use view that is intended to complement the organisationas current processes and be integrated into their Project Management Life Cycle.
 
-## Users of Ant Design Pro
+## Change is the new normal 
+(Source: IBM Making Change Work 2008)
 
-Hundreds of applications within Ant Financial and Alibaba Group are using Ant Design Pro. You are welcome to leave your information in [Ant Design Pro Users](https://github.com/ant-design/ant-design-pro/issues/99) if you or your organization is using it.
+Today’s dynamic work environment is causing organizations to reframe the traditional view of what “normal” is. We are witnessing the effects of globalization, technology advances, complex multinational organizations, more frequent partnering across national borders and company boundaries – just to mention a few of the enablers and accelerators of change.
 
-### For Designers
+No longer will companies have the luxury of expecting day-to-day operations to fall into a static or predictable pattern that is interrupted only occasionally by short bursts of change. to prosper, leaders will need to abandon such outdated notions of change. In reality, the new normal is continuous change – not the absence of change.
 
-If you are a product manager or designer, you can find the [design kit](/docs/resource) here.
+Change masters have realised that behavioral and cultural change is crucial to project success and is considerably tougher to address than the so-called ‘hard’ factors, such as structure, performance measures and incentives.
 
-### For Developers
+Practitioners place a key responsibility for successful change right at top management’s door.
 
-We will walk you through the steps to get started.
+<img src="https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/assets%2Fchange.JPG?alt=media&token=addeec6d-5c98-4e0b-a89e-f35f7051b489" width='800px'/>
+*IBM Making Change Work 2008
 
-## Preparation
+## Why leading people through change is important
 
-You will need [yarn](https://yarnpkg.com), [node](http://nodejs.org/) and [git](https://git-scm.com/). The project is based on [ES2015+](https://babeljs.io/learn-es2015/), [React](http://facebook.github.io/react/), [UmiJS](https://umijs.org/), [dva](http://github.com/dvajs/dva), [g2](https://antv.alipay.com/zh-cn/g2/3.x/index.html) and [antd](https://ant.design/docs/react/introduce). It would be helpful if you have pre-existing knowledge on those.
+Focusing on process and technology in isolation of people factors will not deliver lasting business benefits
 
-## Installation
 
-Create a new empty folder as project root. Execute command in the folder:
 
-```bash
-yarn create umi
-```
+## How does Sortd help?
 
-or
-
-```bash
-npm create umi
-```
-
-Choose `ant-design-pro`：
-
-```bash
- Select the boilerplate type (Use arrow keys)
-❯ ant-design-pro  - Create project with an layout-only ant-design-pro boilerplate, use together with umi block.
-  app             - Create project with a simple boilerplate, support typescript.
-  block           - Create a umi block.
-  library         - Create a library with umi.
-  plugin          - Create a umi plugin.
-```
-
-Ant Design Pro will be installed automatically.
-
-## Scaffolding
-
-We have provided a scaffold which includes common routes for admins and demonstrates our component library. The project layout is as follows:
-
-```bash
-├── config                   # umi config, include routes and webpack etc.
-├── mock                     # Local Mock Data
-├── public
-│   └── favicon.png          # Favicon
-├── src
-│   ├── assets               # Local static files
-│   ├── components           # Components
-│   ├── e2e                  # Integrated Test Case
-│   ├── layouts              # Common Layouts
-│   ├── models               # Global dva Model
-│   ├── pages                # Sub-pages and templates
-│   ├── services             # Back-end Services
-│   ├── utils                # Utility
-│   ├── locales              # i18n resources
-│   ├── global.less          # Global Stylesheet
-│   └── global.ts            # Global JS
-├── tests                    # Tests Configuration
-├── README.md
-└── package.json
-```
-
-## Development
-
-Install Dependencies
-
-```bash
-$ npm install
-```
-
-```bash
-$ npm start
-```
-
-<img src="https://gw.alipayobjects.com/zos/rmsportal/uHAzKpIQDMGdmjIxZLOV.png" width="700" />
-
-This will automatically open [http://localhost:8000](http://localhost:8000). If you see the following page then you have succeeded. <img src="https://user-images.githubusercontent.com/5378891/58090083-0b68c700-7bf9-11e9-8f52-d55ab2ebaab5.png" width="700" alt="Screenshot" />
-
-You're all set!
-
-We have built-in **mock data**, **hot module reloading**, **state management**,**i18n**, **global router**, etc. You can continue exploring other documents for more details on those topics.
-
-## 后续步骤
-
-[> Block Development](/docs/block-cn) Quickly build standard pages.
-
-[> Traditional development mode](/docs/router-and-nav-cn), fully custom development.
+Sortd aims to enable organisations to effectively plan for the afforementioned soft factors through a collaborative change platform, ensuring greater change success.

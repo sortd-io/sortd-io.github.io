@@ -3,10 +3,11 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import { Link } from 'gatsby';
 import { Row, Col, Icon, Select, Input, Menu, Button, Modal, Popover } from 'antd';
 import * as utils from '../utils';
+import LOGO_URL from '../../images/full-logo.png';
 
 const { Option } = Select;
  
-import LOGO_URL from '../../images/full-logo.png';
+
 const key = 'antd-pro@2.0.0-notification-sent';
 
 let docSearch: (config: any) => void;
@@ -253,7 +254,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
             <Link id="logo" to="/">
               <img
                 src={LOGO_URL}
-                alt="Ant Design Pro"
+                alt="Sortd"
               />
             </Link>
           </Col>

@@ -7,6 +7,7 @@ import Parallax from 'rc-scroll-anim/lib/ScrollParallax';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { injectIntl } from 'react-intl';
+import { Button } from 'antd';
 
 const { TweenOneGroup } = TweenOne;
 const featuresCN = [

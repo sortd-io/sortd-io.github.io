@@ -70,7 +70,10 @@ export default {
     'app.footer.author': 'Created by AFX',
     'app.footer.work_with_us': 'Work with Us',
     'app.footer.more-product': 'More Products',
-    'app.footer.company': 'AFX',
+    'app.footer.company': 'Sortd',
+    'app.footer.quicklinks': 'Quick Links',
+    'app.footer.aboutus': 'About Us',
+
     'app.footer.ant-design': 'UI Design Language',
     'app.footer.yuque': 'YuQue',
     'app.footer.yuque.slogan': 'Write your document as a team',

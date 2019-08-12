@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'ANT DESIGN PRO',
-    description: 'Out-of-box UI solution for enterprise applications',
-    author: 'Ant Design',
-    siteUrl: `https://pro.ant.design`,
+    title: 'Sortd',
+    description: 'Collaborative Organisational Change Management Platform',
+    author: 'Sortd.io',
+    siteUrl: `https://web.sortd.io`,
   },
   plugins: [
     {

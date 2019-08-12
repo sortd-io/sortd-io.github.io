@@ -9,6 +9,8 @@ import { isZhCN, getLocalizedPathname } from '../utils';
 import Snapshot from '../../images/Snapshot.png';
 import Readiness from '../../images/Readiness.png';
 import Sizing from '../../images/Sizing Wizard.png';
+import HALF_LOGO_URL from '../../images/half-logo.png';
+
 import 'html5-device-mockups';
 
 function Banner(props) {
@@ -30,7 +32,9 @@ function Banner(props) {
         <div key="line" className="title-line-wrapper">
           <div className="title-line" style={{ transform: 'translateX(-64px)' }} />
         </div>
-        <h1 key="h1">SORTD</h1>
+        <h1 key="h1">
+          <img src={HALF_LOGO_URL} width={160} />
+        </h1>
         <p key="content">
           <FormattedMessage id="app.home.slogan" />
         </p>
