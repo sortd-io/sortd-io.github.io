@@ -57,43 +57,43 @@ const featuresCN = [
 
 const featuresEN = [
   {
-    title: ' Collaborative',
-    content: 'Follow Ant Design specification',
+    title: 'Increase Collaboration',
+    content: 'Employee involvement is one of the greatest contributors to change success',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/VriUmzNjDnjoFoFFZvuh.svg',
     color: '#13C2C2',
     shadowColor: 'rgba(19,194,194,.12)',
   },
   {
-    title: 'Real-Time',
-    content: 'Typical templates for enterprise applications',
+    title: 'Centralise Change Management',
+    content: 'No more storing change documents in a drawer under your desk',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/smwQOoxCjXVbNAKMqvWk.svg',
     color: '#2F54EB',
     shadowColor: 'rgba(47,84,235,.12)',
   },
   {
-    title: 'Fast',
-    content: 'Newest development stack of React/dva/antd',
+    title: 'Leverage Data',
+    content: 'Interactive reporting on change initiatives enables increased business value',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/hBbIHzUsSbSxrhoRFYzi.svg',
     color: '#F5222D',
     shadowColor: 'rgba(245,34,45,.12)',
   },
   {
-    title: 'Best Practice',
-    content: 'Designed for varies of screen size',
+    title: 'Be Best Practice',
+    content: 'Built on best practice change principals, Sortd ensures your doing the right thing at each step',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/BISfzKcCNCYFmTYcUygW.svg',
     color: '#1AC44D',
     shadowColor: 'rgba(26,196,77,.12)',
   },
   {
-    title: 'Customisable',
-    content: 'Customizable theme with simple config',
+    title: 'Control Documentation',
+    content: 'Ensure everyone in your organisation is using the same change tools',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/XxqEexmShHOofjMYOCHi.svg',
     color: '#FAAD14',
     shadowColor: 'rgba(250,173,20,.12)',
   },
   {
-    title: 'International',
-    content: 'Built-in i18n solution',
+    title: 'Save Time',
+    content: 'Spend less time planning and more time changing',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/JsixxWSViARJnQbAAPkI.svg',
     color: '#722ED1',
     shadowColor: 'rgba(114,46,209,.12)',
@@ -240,7 +240,7 @@ class Page1 extends React.PureComponent {
               }}
               location="page1-wrapper"
             >
-              Feature
+              Benefits
             </Parallax>
           )}
           <h2>

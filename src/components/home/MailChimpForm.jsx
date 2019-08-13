@@ -103,7 +103,7 @@ class MailChimpForm extends React.Component {
                 {...fields}
                 submitting={status === 'sending'}
                 onChange={this.handleFormChange}
-                onSubmit={props => subscribe({ ...props })}
+                onSubmit={() => subscribe({EMAIL: fields.email.value, NAME: fields.name.value || '' })}
               />
             )}
             {status === 'error' && (

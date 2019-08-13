@@ -25,5 +25,6 @@ The following roles are assignable to users within an Organisation:
 
 ## Creating a New Organisation
 
-1. Step 1
+When signing up to Sortd for the first time, you will have the option to create a new Organisation or join an existing Organisation if the email domain you used allows self sign-up.
 
+<img src='https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/assets%2Fsignup.PNG?alt=media&token=95808a25-6907-4b0b-92e1-be264f88a86c'/>

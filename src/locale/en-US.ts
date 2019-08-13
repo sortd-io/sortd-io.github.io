@@ -29,7 +29,7 @@ export default {
     'app.home.preview': 'Preview',
     'app.home.start': 'Getting Started',
     'app.home.download': 'Download',
-    'app.home.letspro': 'Being the first to know always feels great! Sign up below to get first access to our platform.',
+    'app.home.letspro': 'Being the first to know always feels great! Sign up below to get early access to our platform.',
     'app.home.selectpro': 'Select Ant Design Pro',
     'app.home.selectlanguage': 'Select language you use',
     'app.home.openbrowser': 'open browser and visit',

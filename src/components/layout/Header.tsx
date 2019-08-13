@@ -10,40 +10,6 @@ const { Option } = Select;
 
 const key = 'antd-pro@2.0.0-notification-sent';
 
-let docSearch: (config: any) => void;
-if (typeof window !== 'undefined') {
-  // eslint-disable-next-line global-require
-  docSearch = require('docsearch.js');
-}
-
-function initDocSearch(locale: 'zh-CN' | 'en-US') {
-  if (!docSearch) {
-    return;
-  }
-  const lang = locale === 'zh-CN' ? 'cn' : 'en';
-  docSearch({
-    appID: 'NMSO14VOK8',
-    apiKey: 'a59495ad789e476554458baa323204d4',
-    indexName: 'prod_SORTD',
-    inputSelector: '#search-box input',
-    algoliaOptions: { facetFilters: [`tags:${lang}`] },
-    transformData(
-      hits: {
-        url: string;
-      }[],
-    ) {
-      hits.forEach(hit => {
-        // eslint-disable-next-line  no-param-reassign
-        hit.url = hit.url.replace('ant.design.pro', window.location.host);
-        // eslint-disable-next-line  no-param-reassign
-        hit.url = hit.url.replace('https:', window.location.protocol);
-      });
-      return hits;
-    },
-    debug: false, // Set debug to true if you want to inspect the dropdown
-  });
-}
-
 interface HeaderProps {
   isMobile: boolean;
   intl: any;
@@ -79,7 +45,6 @@ class Header extends React.Component<HeaderProps, HeaderState> {
         }
       }
     });
-    initDocSearch(intl.locale);
 
     if (localStorage.getItem(key) !== 'true' && Date.now() < new Date('2018/9/5').getTime()) {
       this.infoNewVersion();
@@ -88,7 +53,6 @@ class Header extends React.Component<HeaderProps, HeaderState> {
     const {
       intl: { locale },
     } = this.props;
-    initDocSearch(locale);
   }
 
   componentDidUpdate(preProps: HeaderProps) {
@@ -217,12 +181,12 @@ class Header extends React.Component<HeaderProps, HeaderState> {
           </Link>
         </Menu.Item>
         <Menu.Item key="docs">
-          <Link to={utils.getLocalizedPathname('/docs/getting-started', isZhCN)}>
+          <Link to={utils.getLocalizedPathname('/docs/introduction', isZhCN)}>
             <FormattedMessage id="app.header.menu.docs" />
           </Link>
         </Menu.Item>
         <Menu.Item key="blog">
-          <Link to={utils.getLocalizedPathname('/blog/change-theme', isZhCN)}>Blog</Link>
+          <Link to={utils.getLocalizedPathname('/blog/', isZhCN)}>Blog</Link>
         </Menu.Item>
         {menuMode === 'inline' && (
           <Menu.Item key="preview">
@@ -259,39 +223,12 @@ class Header extends React.Component<HeaderProps, HeaderState> {
             </Link>
           </Col>
           <Col xxl={20} xl={19} lg={16} md={16} sm={0} xs={0}>
-            <div id="search-box">
-              <Icon type="search" />
-              <Input
-                ref={ref => {
-                  this.searchInput = ref;
-                }}
-                placeholder={intl.formatMessage({ id: 'app.header.search' })}
-              />
-            </div>
+            
             <div className="header-meta">
               <div className="right-header">
-                <div id="lang">
-                  <Button onClick={this.handleLangChange} size="small">
-                    <FormattedMessage id="app.header.lang" />
-                  </Button>
-                </div>
-                <div id="preview">
-                  <a
-                    id="preview-button"
-                    target="_blank"
-                    href="http://preview.pro.ant.design"
-                    rel="noopener noreferrer"
-                  >
-                    <Button icon="eye-o" size="small">
-                      <FormattedMessage id="app.home.preview" />
-                    </Button>
-                  </a>
-                </div>
-                <Select size="small" onChange={this.onVersionChange} value="stable">
-                  <Option value="v1">v1</Option>
-                  <Option value="v2">v2</Option>
-                  <Option value="stable">v4</Option>
-                </Select>
+                
+                
+                
               </div>
               {menuMode === 'horizontal' ? <div id="menu">{menu}</div> : null}
             </div>

@@ -19,16 +19,23 @@ function Page2({ location }) {
         <h2>
           Let’s get <span>Sortd</span>
         </h2>
+
         <OverPack>
+          
           <QueueAnim key="queue" type="bottom" leaveReverse className="page2-content">
+          <div key="code1" className="subscribe">
+
             <p key="p" className="page-content">
               <FormattedMessage id="app.home.letspro" />
             </p>
-            <div key="code1" className="subscribe">
+           
               <MailChimpForm />
-            </div>
+              </div>
+
           </QueueAnim>
+
         </OverPack>
+
       </div>
     </div>
   );
