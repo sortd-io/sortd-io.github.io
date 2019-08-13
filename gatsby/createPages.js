@@ -34,7 +34,7 @@ module.exports = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   );
 
   if (allMarkdown.errors) {
@@ -94,6 +94,6 @@ module.exports = async ({ graphql, actions }) => {
       fromPath: path,
       redirectInBrowser: true,
       toPath: redirects[path],
-    })
+    }),
   );
 };
