@@ -32,6 +32,8 @@
     padding: 0 40px;
   }
   .banner-wrapper .banner-title-wrapper {
+    opacity: 1;
+
     h1 {
       font-size: 36px;
     }
@@ -217,6 +219,25 @@
 }
 
 @media only screen and (max-width: @screen-md) {
+  .subscribe {
+    width: 100%;
+    max-width: 840px;
+    border-radius: 4px;
+    background: #f2f4f5;
+    line-height: 28px;
+    margin: 0;
+    color: #151e26;
+    padding: 20px;
+  }
+  .mainInput:global(.ant-input-affix-wrapper .ant-input) {
+    width: 100% !important;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+
+
   #search-box {
     display: none;
   }
@@ -242,6 +263,7 @@
 
   .banner-wrapper {
     width: 80%;
+
     height: calc(~'100vh - 64px');
     overflow: hidden;
     .banner-title-wrapper,

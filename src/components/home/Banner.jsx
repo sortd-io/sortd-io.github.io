@@ -2,7 +2,7 @@ import React from 'react';
 import GitHubButton from 'react-github-button';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { Button, Carousel } from 'antd';
+import { Button, Carousel, Input, Icon } from 'antd';
 import { Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 import { isZhCN, getLocalizedPathname } from '../utils';
@@ -10,7 +10,7 @@ import Snapshot from '../../images/Snapshot.png';
 import Readiness from '../../images/Readiness.png';
 import Sizing from '../../images/Sizing Wizard.png';
 import HALF_LOGO_URL from '../../images/half-logo.png';
-
+import MailChimpQuick from './MailChimpQuick';
 import 'html5-device-mockups';
 
 function Banner(props) {
@@ -53,20 +53,14 @@ function Banner(props) {
         <p key="content">
           <FormattedMessage id="app.home.slogan" />
         </p>
+        <div className="signupLabel">
+          Be one of the first to try it - sign up now for early access
+        </div>
         <div key="button" className="button-wrapper">
-          <Link to={getLocalizedPathname('/docs/introduction', isZhCN(location.pathname))}>
-            <Button style={{ margin: '0 16px' }} type="primary" ghost>
-              <FormattedMessage id="app.home.start" />
-            </Button>
-          </Link>
-          <GitHubButton
-            key="github-button"
-            type="stargazers"
-            namespace="sortd-io"
-            repo="sortd-website"
-          />
+          <MailChimpQuick />
         </div>
       </QueueAnim>
+
       {!isMobile && (
         <TweenOne animation={{ opacity: 1 }} height="100%" className="banner-image-wrapper">
           <div className="device-wrapper" style={{ maxWidth: '100%' }}>
