@@ -163,7 +163,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
       .slice(0, -1)
       .join('/');
     let activeMenuItem = module || 'home';
-    if (/^blog/.test(path)) {
+    if (/blog/.test(path)) {
       activeMenuItem = 'blog';
     } else if (/docs/.test(path)) {
       activeMenuItem = 'docs';
@@ -186,7 +186,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
           </Link>
         </Menu.Item>
         <Menu.Item key="blog">
-          <Link to={utils.getLocalizedPathname('/blog/', isZhCN)}>Blog</Link>
+          <Link to={utils.getLocalizedPathname('/blog/why-i-started-sortd', isZhCN)}>Blog</Link>
         </Menu.Item>
         {menuMode === 'inline' && (
           <Menu.Item key="preview">

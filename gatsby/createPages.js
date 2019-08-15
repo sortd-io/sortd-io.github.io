@@ -86,7 +86,7 @@ module.exports = async ({ graphql, actions }) => {
   createRedirect({
     fromPath: '/blog/',
     redirectInBrowser: true,
-    toPath: '/blog/0819/why-i-started-sortd',
+    toPath: '/blog/why-i-started-sortd',
   });
 
   Object.keys(redirects).map(path =>

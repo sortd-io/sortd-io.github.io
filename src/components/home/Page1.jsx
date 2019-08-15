@@ -59,7 +59,8 @@ const featuresEN = [
   {
     title: 'Increase Collaboration',
     content: 'Employee involvement is one of the greatest contributors to change success',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/VriUmzNjDnjoFoFFZvuh.svg',
+    src:
+      'https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/assets%2Fcollaboration.png?alt=media&token=fcc12d38-0373-45c9-bec8-64d4ce670e70',
     color: '#13C2C2',
     shadowColor: 'rgba(19,194,194,.12)',
   },
@@ -73,29 +74,30 @@ const featuresEN = [
   {
     title: 'Leverage Data',
     content: 'Interactive reporting on change initiatives enables increased business value',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/hBbIHzUsSbSxrhoRFYzi.svg',
-    color: '#F5222D',
-    shadowColor: 'rgba(245,34,45,.12)',
+    src: 'https://gw.alipayobjects.com/zos/rmsportal/aLQyKyUyssIUhHTZqCIb.svg',
+    color: '#EB2F96',
+    shadowColor: 'rgba(235,45,150,.12)',
   },
   {
     title: 'Be Best Practice',
     content:
       'Built on best practice change principals, Sortd ensures your doing the right thing at each step',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/BISfzKcCNCYFmTYcUygW.svg',
-    color: '#1AC44D',
-    shadowColor: 'rgba(26,196,77,.12)',
+    src: 'https://gw.alipayobjects.com/zos/rmsportal/pbmKMSFpLurLALLNliUQ.svg',
+    color: '#FA8C16',
+    shadowColor: 'rgba(250,140,22,.12)',
   },
   {
     title: 'Control Documentation',
     content: 'Ensure everyone in your organisation is using the same change tools',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/XxqEexmShHOofjMYOCHi.svg',
-    color: '#FAAD14',
-    shadowColor: 'rgba(250,173,20,.12)',
+    src: 'https://gw.alipayobjects.com/zos/rmsportal/hBbIHzUsSbSxrhoRFYzi.svg',
+    color: '#F5222D',
+    shadowColor: 'rgba(245,34,45,.12)',
   },
   {
     title: 'Save Time',
     content: 'Spend less time planning and more time changing',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/JsixxWSViARJnQbAAPkI.svg',
+    src:
+      'https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/assets%2Ftime.png?alt=media&token=101f7a30-abe4-4f81-8203-3f30d95d9679',
     color: '#722ED1',
     shadowColor: 'rgba(114,46,209,.12)',
   },
@@ -206,7 +208,7 @@ class Page1 extends React.PureComponent {
                 boxShadow: `${isHover ? '0 12px 24px' : '0 6px 12px'} ${item.shadowColor}`,
               }}
             >
-              <img src={item.src} alt="img" style={i === 4 ? { marginLeft: -15 } : {}} />
+              <img src={item.src} alt="img" />
             </div>
             <h3>{item.title}</h3>
             <p>{item.content}</p>

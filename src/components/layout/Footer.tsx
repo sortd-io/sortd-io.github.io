@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { Row, Col, Badge } from 'antd';
 import * as utils from '../utils';
 import {Link} from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class Footer extends React.Component<{
   location: {
@@ -48,7 +49,12 @@ class Footer extends React.Component<{
                   <Link to="/blog">Blog</Link>
                 </div>
                 <div>
-                  <a target='_blank' href="https://www.linkedin.com/company/sortdio"><span><img width={14} src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png'/></span>  LinkedIn</a>
+                <OutboundLink
+                    href="https://www.linkedin.com/company/sortdio"
+                    target='_blank'
+                  >
+                  <span><img width={14} src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png'/></span>  LinkedIn
+                  </OutboundLink>
                 </div>
                 
               </div>
@@ -73,7 +79,7 @@ class Footer extends React.Component<{
         </div>
         <div className="bottom-bar">
           Made for you with <span className="heart">❤</span> by
-          <a target="_blank" rel="noopener noreferrer" href="https://yuque.com/afx/blog">
+          <a target="_blank" rel="noopener noreferrer" href="https://sortd.io/">
             <FormattedMessage id="app.footer.company" />
           </a>
         </div>

@@ -236,8 +236,6 @@
     border-radius: 20px;
   }
 
-
-
   #search-box {
     display: none;
   }
@@ -264,7 +262,8 @@
   .banner-wrapper {
     width: 80%;
 
-    height: calc(~'100vh - 64px');
+    // height: calc(~'100vh - 64px');
+    height: auto;
     overflow: hidden;
     .banner-title-wrapper,
     .banner-image-wrapper {
@@ -293,6 +292,7 @@
     }
     .banner-image-wrapper {
       margin: 10vh auto 5vh;
+      text-align: center;
     }
   }
   .home-page {
@@ -333,6 +333,19 @@
     }
     p {
       font-size: 16px;
+    }
+  }
+  .button-wrapper {
+    padding: 16px;
+
+    .ant-form-inline .ant-form-item {
+      margin: 0;
+      width: 100%;
+
+      button {
+        width: 100%;
+        margin: 5px 0 0;
+      }
     }
   }
 }

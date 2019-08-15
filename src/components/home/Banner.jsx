@@ -17,32 +17,30 @@ function Banner(props) {
   const { isMobile, location } = props;
   return (
     <div className="banner-wrapper">
-      {isMobile && (
-        <TweenOne animation={{ opacity: 1 }} height="100%" className="banner-image-wrapper">
-          <div className="device-wrapper" style={{ maxWidth: '100%' }}>
-            <div
-              className="device"
-              data-device="MacbookPro"
-              data-orientation="portrait"
-              data-color="black"
-            >
-              <div className="screen">
-                <Carousel className="home-banner-anim" autoplay>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Change Snapshot" src={Snapshot} />
-                  </div>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Readiness Assessment" src={Readiness} />
-                  </div>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Project Sizing" src={Sizing} />
-                  </div>
-                </Carousel>
-              </div>
+      <TweenOne animation={{ opacity: 1 }} height="100%" className="banner-image-wrapper">
+        <div className="device-wrapper" style={{ maxWidth: '100%' }}>
+          <div
+            className="device"
+            data-device="MacbookPro"
+            data-orientation="portrait"
+            data-color="black"
+          >
+            <div className="screen">
+              <Carousel className="home-banner-anim" autoplay>
+                <div padding="12px">
+                  <img width="100%" height="100%" alt="Change Snapshot" src={Snapshot} />
+                </div>
+                <div padding="12px">
+                  <img width="100%" height="100%" alt="Readiness Assessment" src={Readiness} />
+                </div>
+                <div padding="12px">
+                  <img width="100%" height="100%" alt="Project Sizing" src={Sizing} />
+                </div>
+              </Carousel>
             </div>
           </div>
-        </TweenOne>
-      )}
+        </div>
+      </TweenOne>
       <QueueAnim className="banner-title-wrapper" type={isMobile ? 'bottom' : 'right'}>
         <div key="line" className="title-line-wrapper">
           <div className="title-line" style={{ transform: 'translateX(-64px)' }} />
@@ -60,33 +58,6 @@ function Banner(props) {
           <MailChimpQuick />
         </div>
       </QueueAnim>
-
-      {!isMobile && (
-        <TweenOne animation={{ opacity: 1 }} height="100%" className="banner-image-wrapper">
-          <div className="device-wrapper" style={{ maxWidth: '100%' }}>
-            <div
-              className="device"
-              data-device="MacbookPro"
-              data-orientation="portrait"
-              data-color="black"
-            >
-              <div className="screen">
-                <Carousel className="home-banner-anim" autoplay>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Change Snapshot" src={Snapshot} />
-                  </div>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Readiness Assessment" src={Readiness} />
-                  </div>
-                  <div padding="12px">
-                    <img width="100%" height="100%" alt="Project Sizing" src={Sizing} />
-                  </div>
-                </Carousel>
-              </div>
-            </div>
-          </div>
-        </TweenOne>
-      )}
     </div>
   );
 }
