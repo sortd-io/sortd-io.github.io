@@ -11,7 +11,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "rm -rf .cache && gatsby develop",
-    "gh-pages": "cp CNAME ./public/ && gh-pages -d public",
+    "gh-pages": "copy CNAME .\\public\\ && gh-pages -d public",
     "lint": "npm run lint:js && npm run lint:style",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "antd": "latest",
+    "async-validator": "^3.0.3",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "delegate": "^3.2.0",

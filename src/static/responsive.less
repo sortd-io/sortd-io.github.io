@@ -32,6 +32,8 @@
     padding: 0 40px;
   }
   .banner-wrapper .banner-title-wrapper {
+    opacity: 1;
+
     h1 {
       font-size: 36px;
     }
@@ -217,11 +219,27 @@
 }
 
 @media only screen and (max-width: @screen-md) {
+  .subscribe {
+    width: 100%;
+    max-width: 840px;
+    border-radius: 4px;
+    background: #f2f4f5;
+    line-height: 28px;
+    margin: 0;
+    color: #151e26;
+    padding: 20px;
+  }
+  .mainInput:global(.ant-input-affix-wrapper .ant-input) {
+    width: 100% !important;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
   #search-box {
     display: none;
   }
   #logo {
-    padding: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -243,7 +261,9 @@
 
   .banner-wrapper {
     width: 80%;
-    height: calc(~'100vh - 64px');
+
+    // height: calc(~'100vh - 64px');
+    height: auto;
     overflow: hidden;
     .banner-title-wrapper,
     .banner-image-wrapper {
@@ -272,6 +292,7 @@
     }
     .banner-image-wrapper {
       margin: 10vh auto 5vh;
+      text-align: center;
     }
   }
   .home-page {
@@ -290,10 +311,10 @@
 
 @media only screen and (max-width: @screen-xs) {
   .page1 {
-    height: 2400px;
+    height: 1650px;
   }
   .page2 {
-    height: 628px;
+    height: 428px;
   }
   .page1-box-wrapper {
     display: block;
@@ -312,6 +333,19 @@
     }
     p {
       font-size: 16px;
+    }
+  }
+  .button-wrapper {
+    padding: 16px;
+
+    .ant-form-inline .ant-form-item {
+      margin: 0;
+      width: 100%;
+
+      button {
+        width: 100%;
+        margin: 5px 0 0;
+      }
     }
   }
 }

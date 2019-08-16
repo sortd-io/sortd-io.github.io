@@ -6,4 +6,6 @@ type: Activities
 
 ## What is a Change Impact Assessment?
 
-A Business Readiness Assessment is used to identify the readiness of the business for each of the changes. It takes 
+This tool is designed to help organisations prepare for any changes introduced by a particular project. 
+
+Any one change within a project could have several complex implications for the organisation, so understanding the impacts of these is vital.

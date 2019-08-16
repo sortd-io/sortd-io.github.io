@@ -34,7 +34,7 @@ module.exports = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   );
 
   if (allMarkdown.errors) {
@@ -80,25 +80,13 @@ module.exports = async ({ graphql, actions }) => {
   createRedirect({
     fromPath: '/docs/',
     redirectInBrowser: true,
-    toPath: '/docs/getting-started',
-  });
-
-  createRedirect({
-    fromPath: '/blog/beter-block/',
-    redirectInBrowser: true,
-    toPath: '/blog/better-block',
-  });
-
-  createRedirect({
-    fromPath: '/blog/beter-block-cn/',
-    redirectInBrowser: true,
-    toPath: '/blog/better-block-cn',
+    toPath: '/docs/introduction',
   });
 
   createRedirect({
     fromPath: '/blog/',
     redirectInBrowser: true,
-    toPath: '/blog/change-theme',
+    toPath: '/blog/why-i-started-sortd',
   });
 
   Object.keys(redirects).map(path =>
@@ -106,6 +94,6 @@ module.exports = async ({ graphql, actions }) => {
       fromPath: path,
       redirectInBrowser: true,
       toPath: redirects[path],
-    })
+    }),
   );
 };

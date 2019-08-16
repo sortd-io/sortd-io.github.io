@@ -1,7 +1,9 @@
 import React from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
-import { Form, Button, Input, Icon, Result } from 'antd';
+import { Form, Button, Input, Icon, Result, Typography, Tag } from 'antd';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+
+const { Text } = Typography;
 
 const CustomizedForm = Form.create({
   name: 'global_state',
@@ -23,33 +25,36 @@ const CustomizedForm = Form.create({
   onValuesChange(_, values) {},
 })(props => {
   const { getFieldDecorator } = props.form;
+  const { status, message } = props;
+
   return (
-    <Form layout="horizontal">
-      <Form.Item>
+    <Form layout="inline">
+      <Form.Item style={{ marginRight: 0 }}>
         {getFieldDecorator('email', {
           rules: [{ required: true, message: 'Email Address is required!' }],
         })(
           <Input
+            className="mainInput"
             prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />}
-            type="email"
             placeholder="Email Address"
           />,
         )}
       </Form.Item>
       <Form.Item>
-        {getFieldDecorator('name')(
-          <Input
-            prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-            type="name"
-            placeholder="Name"
-          />,
-        )}
-      </Form.Item>
-      <Form.Item>
         <Button loading={props.submitting} type="primary" onClick={() => props.onSubmit({ props })}>
-          Sign Up
+          Get Early Access
         </Button>
       </Form.Item>
+      {status === 'error' && (
+        <Tag style={{ marginTop: '12px' }} color="volcano">
+          <div dangerouslySetInnerHTML={{ __html: message }} />
+        </Tag>
+      )}
+      {status === 'success' && (
+        <Tag style={{ marginTop: '12px' }} color="geekblue">
+          Thanks! We'll be in touch shortly.
+        </Tag>
+      )}
     </Form>
   );
 });
@@ -95,31 +100,16 @@ class MailChimpForm extends React.Component {
         url={url}
         render={({ subscribe, status, message }) => (
           <div>
-            {status !== 'error' && status !== 'success' && (
-              <CustomizedForm
-                {...fields}
-                submitting={status === 'sending'}
-                onChange={this.handleFormChange}
-                onSubmit={() =>
-                  subscribe({ EMAIL: fields.email.value, NAME: fields.name.value || '' })
-                }
-              />
-            )}
-            {status === 'error' && (
-              <Result
-                status="error"
-                title="Error signing up"
-                subTitle={message}
-                extra={<Button onClick={() => (status = null)}>Try Again</Button>}
-              />
-            )}
-            {status === 'success' && (
-              <Result
-                status="success"
-                title="We'll be in touch shortly!"
-                extra={<Button type="primary">Back</Button>}
-              />
-            )}
+            <CustomizedForm
+              {...fields}
+              submitting={status === 'sending'}
+              onChange={this.handleFormChange}
+              onSubmit={() =>
+                subscribe({ EMAIL: fields.email.value, NAME: fields.name.value || '' })
+              }
+              status={status}
+              message={message}
+            />
           </div>
         )}
       />
