@@ -73,8 +73,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Ant Design Pro',
-        short_name: 'Ant Design Pro Doc',
+        name: 'Sortd',
+        short_name: 'Sortd Doc',
         display: 'standalone',
         start_url: './?utm_source=homescreen',
         theme_color: '#002140',
