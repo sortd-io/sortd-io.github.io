@@ -81,7 +81,7 @@ const featuresEN = [
   {
     title: 'Embrace Best Practice',
     content:
-      'Built on best practice change principals, Sortd ensures you\'re doing the right thing at each step',
+      "Built on best practice change principals, Sortd ensures you're doing the right thing at each step",
     src: 'https://gw.alipayobjects.com/zos/rmsportal/pbmKMSFpLurLALLNliUQ.svg',
     color: '#FA8C16',
     shadowColor: 'rgba(250,140,22,.12)',

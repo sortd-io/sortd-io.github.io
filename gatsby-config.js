@@ -11,16 +11,16 @@ module.exports = {
       options: {
         includeInDevelopment: true,
         id: '1446639',
-        sv: '6'
-      }
+        sv: '6',
+      },
     },
- 
+
     {
       resolve: 'gatsby-plugin-intercom-spa',
       options: {
         app_id: 'wq7oaqfa',
         include_in_development: true,
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-less',
