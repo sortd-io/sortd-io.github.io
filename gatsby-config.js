@@ -7,6 +7,22 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-hotjar-tracking`,
+      options: {
+        includeInDevelopment: true,
+        id: '1446639',
+        sv: '6'
+      }
+    },
+ 
+    {
+      resolve: 'gatsby-plugin-intercom-spa',
+      options: {
+        app_id: 'wq7oaqfa',
+        include_in_development: true,
+      }
+    },
+    {
       resolve: 'gatsby-plugin-less',
       options: {
         javascriptEnabled: true,
@@ -73,8 +89,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Ant Design Pro',
-        short_name: 'Ant Design Pro Doc',
+        name: 'Sortd Website',
+        short_name: 'Sortd Website',
         display: 'standalone',
         start_url: './?utm_source=homescreen',
         theme_color: '#002140',

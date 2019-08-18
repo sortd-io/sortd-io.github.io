@@ -4,6 +4,9 @@ title: About Sortd
 type: Introduction
 ---
 
+
+Documentation is currently under construction, more to come soon.
+
 ## Foreword
 
 > “Change is the law of life, and those who look only to the past and present are certain to miss the future” -John F. Kennedy

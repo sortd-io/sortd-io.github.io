@@ -79,9 +79,9 @@ const featuresEN = [
     shadowColor: 'rgba(235,45,150,.12)',
   },
   {
-    title: 'Be Best Practice',
+    title: 'Embrace Best Practice',
     content:
-      'Built on best practice change principals, Sortd ensures your doing the right thing at each step',
+      'Built on best practice change principals, Sortd ensures you\'re doing the right thing at each step',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/pbmKMSFpLurLALLNliUQ.svg',
     color: '#FA8C16',
     shadowColor: 'rgba(250,140,22,.12)',
@@ -247,7 +247,7 @@ class Page1 extends React.PureComponent {
             </Parallax>
           )}
           <h2>
-            What can <span>Sortd</span> do for you{' '}
+            What <span>Sortd</span> can do for you{' '}
           </h2>
           <div className="title-line-wrapper page1-line">
             <div className="title-line" />

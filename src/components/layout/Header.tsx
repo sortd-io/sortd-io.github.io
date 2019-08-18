@@ -98,7 +98,7 @@ class Header extends React.Component<HeaderProps, HeaderState> {
         <div>
           <img
             src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-            alt="Ant Design"
+            alt="Sortd"
           />
           <p>
             {formatMessage({ id: 'app.publish.greeting' })}
@@ -107,12 +107,12 @@ class Header extends React.Component<HeaderProps, HeaderState> {
               rel="noopener noreferrer"
               href={formatMessage({ id: 'app.publish.url' })}
             >
-              Ant Desgin Pro {formatMessage({ id: 'app.publish.intro' })}
+              Sortd {formatMessage({ id: 'app.publish.intro' })}
             </a>
             {formatMessage({ id: 'app.publish.tips' })}
             {formatMessage({ id: 'app.publish.old-version-guide' })}
-            <a target="_blank" rel="noopener noreferrer" href="https://v1.pro.ant.design">
-              v1.pro.ant.design
+            <a target="_blank" rel="noopener noreferrer" href="https://sortd.io">
+              v1.sortd.io
             </a>
             {formatMessage({ id: 'app.publish.old-version-tips' })}
           </p>
@@ -188,13 +188,6 @@ class Header extends React.Component<HeaderProps, HeaderState> {
         <Menu.Item key="blog">
           <Link to={utils.getLocalizedPathname('/blog/why-i-started-sortd', isZhCN)}>Blog</Link>
         </Menu.Item>
-        {menuMode === 'inline' && (
-          <Menu.Item key="preview">
-            <a target="_blank" href="http://preview.pro.ant.design/" rel="noopener noreferrer">
-              <FormattedMessage id="app.home.preview" />
-            </a>
-          </Menu.Item>
-        )}
       </Menu>,
     ];
 

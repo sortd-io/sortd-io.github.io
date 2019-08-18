@@ -1,17 +1,17 @@
-# Ant Design Pro Site
+# Sortd Public Website
 
-The documentation source of [Ant Design Pro](https://github.com/ant-design/ant-design-pro).
+Documentation for the [Sortd Website](https://github.com/sortd-io/sortd-website).
 
 ### Development
 
 ```bash
-$ git clone git@github.com:ant-design/ant-design-pro-site.git
-$ cd ant-design-pro-site
+$ git clone git@github.com:sortd-io/sortd-website.git
+$ cd sortd-website
 $ npm install
 $ npm start
 ```
 
-Then visit http://localhost:8001 .
+Then visit http://localhost:8000 .
 
 ### Deploy
 

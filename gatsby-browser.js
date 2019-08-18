@@ -2,7 +2,7 @@ import NProgress from 'nprogress';
 
 export const onClientEntry = () => {
   // Merge default options with user defined options in `gatsby-config.js`
-  const options = { color: '#1890ff' };
+  const options = { color: '#0052CC' };
 
   // Inject styles.
   const styles = `
