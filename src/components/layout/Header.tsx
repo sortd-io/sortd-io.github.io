@@ -188,6 +188,13 @@ class Header extends React.Component<HeaderProps, HeaderState> {
         <Menu.Item key="blog">
           <Link to={utils.getLocalizedPathname('/blog/why-i-started-sortd', isZhCN)}>Blog</Link>
         </Menu.Item>
+        {menuMode === 'inline' && (
+          <Menu.Item key="preview">
+            <a target="_blank" href="http://preview.sortd.io/" rel="noopener noreferrer">
+              <FormattedMessage id="app.home.preview" />
+            </a>
+          </Menu.Item>
+        )}
       </Menu>,
     ];
 
@@ -220,7 +227,18 @@ class Header extends React.Component<HeaderProps, HeaderState> {
             <div className="header-meta">
               <div className="right-header">
                 
-                
+              <div id="preview">
+                  <a
+                    id="preview-button"
+                    target="_blank"
+                    href="http://preview.sortd.io"
+                    rel="noopener noreferrer"
+                  >
+                    <Button icon="eye-o" size="small">
+                      <FormattedMessage id="app.home.preview" />
+                    </Button>
+                  </a>
+                </div>
                 
               </div>
               {menuMode === 'horizontal' ? <div id="menu">{menu}</div> : null}
