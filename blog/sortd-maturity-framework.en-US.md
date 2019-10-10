@@ -46,17 +46,27 @@ Maybe we can skip the getting yelled at part, but the principle remains the same
 
 When an organisation is at the lowest level of maturity, change management can be seen as a distraction from delivering technical solutions/projects and often simply a waste of time. If change management is used, it is often as a last resort when everything else seems to fail. There is little to no support from senior leadership, and very little desire from individuals to make an effort.
 
-Organisations at this level may experience a high rate of changes failing, staff experiencing change fatigue, and an overall lack of foresight into upcoming changes.
+Organisations at this level may experience a high rate of change failure, staff experiencing change fatigue, and an overall lack of foresight into the direction of the organisation.
 
 ## Defined
 
+When an organisation has reached the Defined level of change maturity, change management may become important to some, but still remains unimportant to most. When change management is used, it is often used selectively or sporadically, often in reaction to resistance to change. There may be a few tools, templates, and resources available for use (behind the coffee machine perhaps?) and if someone knows someone who knows someone they may just be able to get access to these resources. Change practitioners are often in isolated pockets and use their own knowledge rather than relying on a organisaiton framework.
 
+Organisations at this level have greater success at embedding change than at the Ad Hoc level, however may find that success varies greatly from project to project depending on a variety of factors.
 
 ## Repeatable
 
+When an organisation reaches the Repeatable level of change maturity, change management may be acknowledge by many, but is still often seen as the first thing to drop when times are tough. Organisations at this level have a structured approach which adds value when it is used, and change management activities is still not often included as part of the project management framework. There will likely be a set of tools, templates, and resources available for use, often with multiple versions scattered around the organisation. Change practitioners start to work together, sometimes creating an unofficial center of excellence to share knowledge, and this is supported by at least some senior leaders and managers.
+
+
+
 ## Managed
 
+Organisations at the Managed level of change maturity can show a lot of value attributed to the use of change management. It is generally acknowledged throughout the entire organisation as an important success factor and has a unified approach. Change management is used on most projects, and is integrated into the project management framework, including key change milestones. Organisations at this level will have a set of tools, templates, and resources that are fit for purpose and regularly reviewed. Change management is used and considered by most project teams and functional business areas, senior leadership, managers, and supervisors. There is often a formalised center of excellence to share knowledge and resources.
+
 ## Optimised
+
+When an organisation reaches the pinnacle of maturity, Optimised, change management is no longer an activity to be undertaken, it is **how** things are done. It becomes a core competency for the entire organisation and is used on all projects and initiatives. The project management framework and change management framework become one, and project and change teams work together as one to drive results. Organisations at this level will often use a change management platform to manage change activies, have regular reviews of the quality of tools, templates, and resources, and have a continuous improvement mindset. Change management is used by all project teams, functional business units, and leadership. There will be a formalised centre of excellence.
 
 # The Framework
 
