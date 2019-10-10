@@ -1,0 +1,82 @@
+---
+order: 4
+title: Assessing Organisational Change Maturity
+subtitle: Scott Waddell
+type: October 2019
+time: 2019-10-10
+---
+> If you aim for nothing, you'll achieve it every time.
+
+Many organisations struggle (or are not even trying) to build their internal organisational change management capability, often relying on external consultants to save troubled projects or simply not seeing the expected return on investment. To help address this struggle, Sortd has developed the Sortd Organisational Change Maturity Model, a detailed model based on 4 key influencers assessed using practical real life examples and supported by the Sortd Organisational Change Management Platform. The Sortd Organisational Change Maturity Model is based on years of research from global leaders in change including McKinsey & Company, Change Management Institute, and Prosci.
+
+By setting goals and tracking progress towards them, organisations are able to truly see the value created when change is successfully executed.
+
+<img height='400px' src='https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/blogposts%2Fblogpost1.png?alt=media&token=56e7d9b0-cf23-4a1b-95e1-6c0b6834d805'/>
+
+# Influencers of Change
+
+ We start with the 4 influencers of change, these are the building blocks of creating a culture of change within an organisation. They have been designed to support changing environments within organisations by:
+* Providing role models for change - when people see their leaders and colleagues behaving differently, they will often mimic this behaviour  - whether conciously or unconciously **(Vision & Leadership)**
+* Enabling a culture of understanding the **why** - congruence between beliefs and actions inspires people to behave in a way which supports change **(Understanding)**
+* Giving people the skills, knowledge, and training necessary to behave in new ways **(Talent & Skills)**
+* Helping people learn through consistency and repetition, as well as ensuring structures, processes, and systems support the changes being asked. All too often organisations have misaligned associations and concequences resulting in reinforcing the wrong behaviour **(Reinforcement)**
+
+## Vision & Leadership
+
+This area focuses on ensuring the necessary vision & leadership are present within the organisation. Are the right sponsors in place? Is communication delivered consistently and in the right format? Is organisational change management seen as a priority or a necessity? 
+
+## Understanding
+
+This area focuses on assessing how organisational change management is used within the organisation. 
+
+## Talent & Skills
+
+This area focuses on ensuring the people within the organisation are supported with the right skills and training to excel at embeddeding and maintaining change.
+
+## Reinforcement
+
+As the late Anthony Bourdain once said:
+> We learn as professionals by repetition, by getting it wrong, getting yelled at and doing it again.
+
+Maybe we can skip the getting yelled at part, but the principle remains the same. As it's name suggests the key focus of this area is ensuring that change management efforts are done in a consistent coordinated manner, enabling organisations to change, learn, and repeat. Is organisational change management present throughout the organisation or isolated in certain pockets? Is organisational change management integrated with the organisations project management framework? Is organisational change management reported on, and actively improved?
+
+# The 5 Levels of Maturity
+
+## Ad hoc
+
+When an organisation is at the lowest level of maturity, change management can be seen as a distraction from delivering technical solutions/projects and often simply a waste of time. If change management is used, it is often as a last resort when everything else seems to fail. There is little to no support from senior leadership, and very little desire from individuals to make an effort.
+
+Organisations at this level may experience a high rate of changes failing, staff experiencing change fatigue, and an overall lack of foresight into upcoming changes.
+
+## Defined
+
+
+
+## Repeatable
+
+## Managed
+
+## Optimised
+
+# The Framework
+
+The 4 areas of focus combined with the 5 levels of maturity combine to form the Sortd Organisational Change Maturity Model.
+
+
+<img height='800px' src='https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/blogposts%2Fmatrix%20SOCMM.png?alt=media&token=cbe37a54-5226-4d41-861a-49bb83744d17'/>
+
+# Sortd Platform
+
+Traditional organisational change management tools are disjointed, static, and can end up creating more pain than value. That's why we created the Sortd Organisational Change Management Platform. The platform incorporates a wide variety of traditional change management tools, as well as some new ones built just for you.
+
+One such tool is the Change Maturity Assessment tool, which enables organisations to consistently track and rate their change maturity. The tool follows an easy to follow questionaire style rating system based on real world practical examples, and enables detailed reporting and action plans to be created.
+
+If you're interested in getting your change #Sortd, get in touch today.
+
+<a class='ant-btn ant-btn-primary' href='mailto: scott@sortd.io'>Get #Sortd Now</a>
+
+## Maturity Dashboard
+<img width='1024px' src='https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/blogposts%2Fmaturity.png?alt=media&token=00d0db93-76df-499e-af0f-62f9b590fc1b'/>
+
+## Maturity Assessments
+<img width='1024px' src='https://firebasestorage.googleapis.com/v0/b/sortd-portal.appspot.com/o/blogposts%2Fmaturityassessment.png?alt=media&token=8edc3b79-a8b5-43c5-90fb-35c4b6e38f5f'/>
